@@ -3,8 +3,8 @@ let str =
 str = str.toLocaleLowerCase();
 str = str.replaceAll(",", "").replaceAll(".", "");
 let strArr = str.split(" ");
-let letter = prompt("На яку букву слова?");
+let letter = prompt("На яку букву слова?").toLowerCase();
 
 for (let i = 0; i < strArr.length; i++) {
-  if (strArr[i][0] == letter) document.writeln(strArr[i]);
+  if (strArr[i][0] == letter) document.write(`${strArr[i]}, `);
 }
